@@ -9,10 +9,10 @@ public class subject169 {
         Solution solution=new Solution();
         System.out.println(solution.majorityElement(nums));
     }
-}
-class Solution {
-    public int majorityElement(int[] nums) {
-        Arrays.sort(nums);
-        return nums[nums.length/2];
+    static class Solution {
+        public int majorityElement(int[] nums) {
+            Arrays.sort(nums);
+            return nums[nums.length/2];
+        }
     }
 }
