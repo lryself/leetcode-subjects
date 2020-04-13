@@ -3,13 +3,13 @@ package 面试题;
 import java.io.File;
 import java.util.*;
 
-public class subject59 {
+public class s59 {
     public static void main(String[] args) {
         MaxQueue maxQueue=new MaxQueue();
         Scanner sc=new Scanner(System.in);
         try
         {
-            sc=new Scanner(new File("F:/编程/java/leetcode/src/面试题/input.txt"));
+            sc=new Scanner(new File("F:/programme/java/leetcode/src/面试题/input.txt"));
         }
         catch (Exception e){
             e.printStackTrace();

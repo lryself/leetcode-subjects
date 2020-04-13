@@ -2,7 +2,7 @@ package 标准题库;
 
 import java.util.Arrays;
 
-public class subject1103 {
+public class s1103 {
     public static void main(String args[])
     {
         Solution solution=new Solution();

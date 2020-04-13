@@ -2,7 +2,7 @@ package 标准题库;
 
 import java.util.Arrays;
 
-public class subject169 {
+public class s169 {
     public static void main(String args[])
     {
         int nums[]=new int[]{6,6,6,7,7};

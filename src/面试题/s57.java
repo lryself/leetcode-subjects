@@ -3,7 +3,7 @@ package 面试题;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class subject57 {
+public class s57 {
     public static void main(String args[])
     {
         int all=15;
