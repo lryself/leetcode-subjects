@@ -4,23 +4,25 @@ import java.util.*;
 
 public class s54 {
     static class Solution {
-        public int[][] merge(int[][] intervals) {
-            if(intervals.length==0)
+        public int[][] merge(int[][] intervals)
+        {
+            if(intervals.length==0)//判断intervals是否为空
                 return intervals;
-            Arrays.sort(intervals, new MyComprator());
-            int[][] ans =new int[intervals.length][];
+            Arrays.sort(intervals, new MyComprator());//排序
+            int[][] ans =new int[intervals.length][];//创建answer数组
             int w=0;
-            ans[0]=intervals[0];
+            ans[0]=intervals[0];//初始化
             for(int i=1;i<ans.length;i++)
-            {
+            {//比较两种情况
                 if(ans[w][1]>=intervals[i][0])
                     ans[w][1]=Math.max(ans[w][1],intervals[i][1]);
                 else
                     ans[++w]=intervals[i];
             }
-            return Arrays.copyOfRange(ans,0,w+1);
+            return Arrays.copyOfRange(ans,0,w+1);//返回answer有值的部分
         }
-        static class MyComprator implements Comparator {
+        static class MyComprator implements Comparator //自定义比较器
+        {
             public int compare(Object arg0, Object arg1) {
                 if(arg0==null&&arg1==null)
                     return 0;
